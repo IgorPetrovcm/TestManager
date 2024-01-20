@@ -1,0 +1,12 @@
+C:\Users\igorp\Programming\TestManager\TestManager\bin\Debug\net8.0\TestManager.deps.json
+C:\Users\igorp\Programming\TestManager\TestManager\bin\Debug\net8.0\TestManager.dll
+C:\Users\igorp\Programming\TestManager\TestManager\bin\Debug\net8.0\TestManager.pdb
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\TestManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\TestManager.AssemblyInfoInputs.cache
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\TestManager.AssemblyInfo.cs
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\TestManager.csproj.CoreCompileInputs.cache
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\TestManager.sourcelink.json
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\TestManager.dll
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\refint\TestManager.dll
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\TestManager.pdb
+C:\Users\igorp\Programming\TestManager\TestManager\obj\Debug\net8.0\ref\TestManager.dll
