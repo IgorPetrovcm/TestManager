@@ -3,6 +3,8 @@ namespace TestManager;
 using System.Text;
 using TestManager.Attributes;
 using System.Reflection;
+using Microsoft.VisualBasic.CompilerServices;
+using System.Diagnostics;
 
 
 public class TestBuilder
@@ -19,7 +21,7 @@ public class TestBuilder
         };
     }
 
-    public void GetTests()
+    public string GetTests()
     {
         StringBuilder result = new StringBuilder();
         
@@ -30,10 +32,22 @@ public class TestBuilder
             IEnumerable<MethodInfo> methods = testClass.GetMethods()
                 .Where(x => x.GetCustomAttributes(typeof(MethodTestingAttribute), false).Length > 0);
 
+            ObjectType classObject = (ObjectType)Activator.CreateInstance(testClass);
+
             foreach (MethodInfo method in methods)
             {
-                method.Invoke(null);
+                Stopwatch diagnostic = new Stopwatch();
+                
+                diagnostic.Start();
+                
+                method.Invoke(classObject, null);
+
+                diagnostic.Stop();
+
+                result.Append(method.Name + "\t" + diagnostic.ElapsedMilliseconds + "\n\t");
             }
         }
+
+        return result.ToString();
     }
 }
