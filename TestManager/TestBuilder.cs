@@ -44,7 +44,7 @@ public class TestBuilder
 
                 diagnostic.Stop();
 
-                result.Append(method.Name + "\t" + diagnostic.ElapsedMilliseconds + "\n\t");
+                result.Append(method.Name + "\t" + diagnostic.Elapsed.TotalSeconds + "\n\t");
             }
         }
 
