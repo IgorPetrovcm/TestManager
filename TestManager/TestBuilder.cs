@@ -32,7 +32,7 @@ public class TestBuilder
             IEnumerable<MethodInfo> methods = testClass.GetMethods()
                 .Where(x => x.GetCustomAttributes(typeof(MethodTestingAttribute), false).Length > 0);
 
-            ObjectType classObject = (ObjectType)Activator.CreateInstance(testClass);
+            object classObject = Activator.CreateInstance(testClass);
 
             foreach (MethodInfo method in methods)
             {
